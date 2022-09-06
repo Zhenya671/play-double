@@ -8,7 +8,7 @@
 
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="antialiased">
-    <div id="app"></div>
+<body id="app">
+<script>window.Laravel = { csrfToken: '{{ csrf_token() }}' }</script>
 </body>
 </html>
