@@ -7,13 +7,6 @@
 <script>
 export default {
     name: "MainPaige",
-    mounted() {
-        if (!window.Laravel) {
-            this.$router.push({
-                path: '/login'
-            });
-        }
-    }
 }
 </script>
 

@@ -1,6 +1,6 @@
 import {createRouter, createWebHashHistory} from "vue-router";
-import Login from "../view/Login";
-import MainPaige from "../view/MainPaige";
+import Login from "../view/Login.vue";
+import MainPaige from "../view/MainPaige.vue";
 
 const routes = [
     {
@@ -9,10 +9,9 @@ const routes = [
         component: Login,
     },
     {
-        path: '/main',
+        path: '/',
         name: 'main-paige',
-        component: 'MainPaige',
-        props: true
+        component: MainPaige,
     }
 ]
 
