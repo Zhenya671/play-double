@@ -1,18 +1,24 @@
 import {createRouter, createWebHashHistory} from "vue-router";
-import Login from "../view/Login.vue";
+import SignIn from "../view/auth/SignIn.vue";
 import MainPaige from "../view/MainPaige.vue";
+import SignUp from "../view/auth/SignUp.vue";
 
 const routes = [
     {
-        path: '/login',
-        name: 'login',
-        component: Login,
+        path: '/signin',
+        name: 'signin',
+        component: SignIn,
     },
     {
         path: '/',
         name: 'main-paige',
         component: MainPaige,
-    }
+    },
+    {
+        path: '/signup',
+        name: 'signup',
+        component: SignUp,
+    },
 ]
 
 const router = createRouter({
